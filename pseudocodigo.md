@@ -1,5 +1,6 @@
-´´´java 
+
 class Sucursal {
+
     float gananciasDeHoy;
     int ventasTotales;
     TotalPorDia gananciasPorDia = new TotalPorDia[];
@@ -14,11 +15,13 @@ class Sucursal {
 }
 
 class TotalDelDia {
+
     float total;
     Date fecha;
 }
 
 class Prenda {
+
     string tipo;
     float precioBase;
     string estado;
@@ -29,6 +32,7 @@ class Prenda {
 }
 
 class Venta {
+
     Prenda prendas = new Prendas[];
     Date fecha = new Date();
     MedioDePago medioDePago;
@@ -39,6 +43,7 @@ class Venta {
 }
 
 class MedioDePago {
+
     int montoDisponible;
 }
 
@@ -47,6 +52,7 @@ class Efectivo extends MedioDePago {
 }
 
 class TarjetaDeCredito extends MedioDePago {
+
     int cantidadCuotas;
     int recargoFijo;
 
@@ -54,8 +60,6 @@ class TarjetaDeCredito extends MedioDePago {
         // calcula recargo
     }
 }
-
-´´´
 
 Anotaciones:
 - Supongo que las prendas no pueden tener mas de un estado al mismo tiempo
